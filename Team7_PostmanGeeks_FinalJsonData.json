@@ -1,0 +1,1235 @@
+[
+   {
+      "requests": [
+         {
+            "name": "User login",
+            "data": [
+               {
+                  "user_password": "",
+                  "user_LoginEmail": "team7@gmail.com",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "test",
+                  "user_LoginEmail": "",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "test",
+                  "user_LoginEmail": "abc",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "1234",
+                  "user_LoginEmail": "team7@gmail.com",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "test",
+                  "user_LoginEmail": "@@@##",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "",
+                  "user_LoginEmail": "",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "###%%",
+                  "user_LoginEmail": "team7@gmail.com",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "test",
+                  "user_LoginEmail": "abcd",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "test",
+                  "user_LoginEmail": "abcd",
+                  "Endpoint": "login",
+                  "statusCode": 401
+               },
+               {
+                  "user_password": "test",
+                  "user_LoginEmail": "team7@gmail.com",
+                  "Endpoint": "login",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Logout",
+            "data": [
+               {
+                  "Endpoint": "logout123",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "logoutdietician",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Get all Morbidities by DieticianBearer_Token",
+            "data": [
+               {
+                  "Endpoint": "morbidity123",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "morbidity",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Get all Morbidities by Admin_Bearer _Token",
+            "data": [
+               {
+                  "Endpoint": "morbidity123",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "morbidity",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Retrieve Morbidity By Test Name with DieticianToken",
+            "data": [
+               {
+                  "Endpoint": "morbidity/{{Invalid_morbidityName}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "morbidity/{{morbidityName}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Retrieve Morbidity By Test Name with AdminToken",
+            "data": [
+               {
+                  "Endpoint": "morbidity/{{Invalid_morbidityName}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "morbidity/{{morbidityName}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "CreateDietician",
+            "data": [
+               {
+                  "ContactNumber": "1198288193",
+                  "DateOfBirth": "1982-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai100@gmail.com",
+                  "Firstname": "",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai72@gmail.com",
+                  "Firstname": "123456789",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai72@gmail.com",
+                  "Firstname": "@#$asd",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "119828817@",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai72@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "asdf",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai72@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai72@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "@#1",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "500-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai72@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+                
+               {
+                  "ContactNumber": "1198288173",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai712@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {
+                  "ContactNumber": "1198288173",
+                  "DateOfBirth": "1982-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai712@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "07306",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 400
+               },
+               {},
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai712@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "07306",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dieticia",
+                  "statusCode": 404
+               },
+               {
+                  "ContactNumber": "1908895005",
+                  "DateOfBirth": "1930-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "asdf59@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician",
+                  "statusCode": 201
+               }
+            ]
+         },
+         {
+            "name": "UpdateDietician_BY_Id",
+            "data": [
+               {
+                  "ContactNumber": "1198288170",
+                  "DateOfBirth": "1981-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai712@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073062",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician/{{InvalidDietician_Id}}",
+                  "statusCode": 404
+               },
+               {
+                  "ContactNumber": "1198288180",
+                  "DateOfBirth": "1982-07-06T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emai712@gmail.com",
+                  "Firstname": "Gopi",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "HackensackNorth",
+                  "HospitalPincode": "073062",
+                  "HospitalStreet": "elm",
+                  "Lastname": "ven",
+                  "Endpoint": "dietician/{{Dietician_Id}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Get_All_Dieticians",
+            "data": [
+               {
+                  "Endpoint": "dieticia",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "dietician",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Get_Dietician_BY_Id",
+            "data": [
+               {
+                  "Endpoint": "dietician/{{InvalidDietician_Id}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "dietician/{{Dietician_Id}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Delete_Dietician_BY_Id",
+            "data": [
+               {
+                  "Endpoint": "dietician/{{InvalidDietician_Id}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "dietician/{{Dietician_Id}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "CreateDietician_2",
+            "data": [
+               {
+                  "ContactNumber": "1300000035",
+                  "DateOfBirth": "1951-08-28T18:14:08.570Z",
+                  "Education": "ABDS",
+                  "Email": "emaill808@gmail.com",
+                  "Firstname": "chanduC",
+                  "HospitalCity": "jersey",
+                  "HospitalName": "Hackensack",
+                  "HospitalPincode": "073061",
+                  "HospitalStreet": "elm",
+                  "Lastname": "vensekh",
+                  "Endpoint": "dietician",
+                  "statusCode": 201
+               }
+            ]
+         },
+         {
+            "name": "Dietician Login",
+            "data": [
+               {
+                  "Endpoint": "login",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Create Patient",
+            "data": [
+               {
+                  "p_FirstName": "",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234509872",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "@@@",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234509872",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "avd123",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234509872",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "@@@@",
+                  "p_ContactNumber": "1234509872",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "",
+                  "p_ContactNumber": "1234509872",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "1234",
+                  "p_ContactNumber": "1234509872",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "123abcd",
+                  "p_ContactNumber": "1234509872",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "abcde123",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "@@@",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "abcde",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "@@@",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "abcd123",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "@@@",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "abcd123",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "abcd",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "0000-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "@@@",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "0000-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "123abcd",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "0000-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "abcd",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "0000-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234098761",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "American",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234098761",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234098761",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "abc123",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234098761",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "@@@",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "",
+                  "statusCode": 404,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1231231234",
+                  "p_Email": "umasambu01@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 400,
+                  "file": ""
+               },
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1234122982",
+                  "p_Email": "umasambu50@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1988-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 201,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               }
+            ]
+         },
+         {
+            "name": "Get Patients Morbidity Details",
+            "data": [
+               {
+                  "Endpoint": "patient/testReports/{{InvalidPatient_Id}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "patient/testReports/{{patientId}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Delete by patient id",
+            "data": [
+               {
+                  "Endpoint": ":patient/{{InvalidPatient_Id}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Create Patient_2",
+            "data": [
+               {
+                  "p_FirstName": "Uma",
+                  "p_Lastname": "Sambu",
+                  "p_ContactNumber": "1200368102",
+                  "p_Email": "umasambu38@yahoo.com",
+                  "p_Allergy": "ALMOND",
+                  "p_FoodPreferences": "Vegetarian",
+                  "p_CuisineCatergory": "South Indian",
+                  "p_DateOfBirth": "1985-06-20",
+                  "Endpoint": "patient",
+                  "statusCode": 201,
+                  "file": "Diabetic and Hemogram Test_Thyrocare lab01.pdf"
+               }
+            ]
+         },
+         {
+            "name": "Patient login",
+            "data": [
+               {
+                  "Endpoint": "login",
+                  "patient_password": "test",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Get Patient Morbidity Details with Id",
+            "data": [
+               {
+                  "Endpoint": "patient/testReports/{{InvalidPatient_Id}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "patient/testReports/{{patient2_id}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Get patient file by FileId",
+            "data": [
+               {
+                  "Endpoint": "patient/testReports/viewFile/{{InvalidPatient_FileId}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "patient/testReports/viewFile/{{patient_fileId}}",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "GET All Patients",
+            "data": [
+               {
+                  "Endpoint": "patientsss",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "patient",
+                  "statusCode": 200
+               }
+            ]
+         },
+         {
+            "name": "Update Patient",
+            "data": [
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "C",
+                  "updateContactNumber": "9830308724",
+                  "updateEmail": "patientDeb22@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{InvalidPatient_Id}}",
+                  "statusCode": 404,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "C",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patientss/{{patientId}}",
+                  "statusCode": 404,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "",
+                  "updateLastName": "C",
+                  "updateContactNumber": "9830308666",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "",
+                  "updateContactNumber": "9830308666",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "C",
+                  "updateContactNumber": "",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "asc30308722",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "C",
+                  "updateContactNumber": "9830308666",
+                  "updateEmail": "",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "patientDeb11gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "abcd",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "abcd",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830308722",
+                  "updateEmail": "1234patientDeb11@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1986-02-14",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 400,
+                  "file": "Hypo Thyroid-Report.pdf"
+               },
+               {
+                  "updateFirstName": "patientDeb",
+                  "updateLastName": "Team7",
+                  "updateContactNumber": "9830909843",
+                  "updateEmail": "patientDeb105@gmail.com",
+                  "updateAllergy": "Soy",
+                  "updateFoodPreference": "Vegan",
+                  "updateCuisineCategory": "indian",
+                  "updateDateOfBirth": "1990-02-24",
+                  "Endpoint": "patient/{{patientId}}",
+                  "statusCode": 200,
+                  "file": "Hypo Thyroid-Report.pdf"
+               }
+            ]
+         },
+         {
+            "name": "Add Reports For Existing Patient-Data Driven",
+            "data": [
+               {
+                  "p_FirstName": "PatientEight",
+                  "p_Lastname": "PatientEightLastName",
+                  "p_ContactNumber": "6863992449",
+                  "p_Email": "eighthPatientOnline@yahoo.com",
+                  "p_Allergy": "",
+                  "p_FoodPreferences": "Vegan",
+                  "p_CuisineCatergory": "Kerala",
+                  "p_DateOfBirth": "1985-06-28",
+                  "Endpoint": "patient/newReports/{{patientId}}",
+                  "statusCode": 400,
+                  "Weight": 60.5,
+                  "Height": 166.5,
+                  "Temperature": 37.9,
+                  "SP": 1,
+                  "DP": 2,
+                  "file": "DiabeticReport.pdf"
+               },
+               {
+                  "p_FirstName": "PatientEight",
+                  "p_Lastname": "PatientEightLastName",
+                  "p_ContactNumber": "6863992449",
+                  "p_Email": "eighthPatientOnline@yahoo.com",
+                  "p_Allergy": "SOY",
+                  "p_FoodPreferences": "Vegan",
+                  "p_CuisineCatergory": "Kerala",
+                  "p_DateOfBirth": "1985-06-28",
+                  "Endpoint": "patient/newReports/{{patientId}}",
+                  "statusCode": 400,
+                  "Weight": 60.5,
+                  "Height": 166.5,
+                  "Temperature": 37.9,
+                  "SP": 1,
+                  "DP": 2,
+                  "file": ""
+               },
+               {
+                  "Endpoint": "patient/newReports/{{patientId}}",
+                  "statusCode": 400,
+                  "Weight": 60.5,
+                  "Height": 166.5,
+                  "Temperature": 37.9,
+                  "SP": 1,
+                  "DP": 2,
+                  "file": "DiabeticReport.pdf"
+               },
+               {
+                  "p_FirstName": "PatientEight",
+                  "p_Lastname": "PatientEightLastName",
+                  "p_ContactNumber": "6863992449",
+                  "p_Email": "eighthPatientOnline@yahoo.com",
+                  "p_Allergy": "SOY",
+                  "p_FoodPreferences": "Vegan",
+                  "p_CuisineCatergory": "Kerala",
+                  "p_DateOfBirth": "1985-06-28",
+                  "Endpoint": "patient/newReports{{patientId}}",
+                  "statusCode": 400,
+                  "Weight": 60.5,
+                  "Height": 166.5,
+                  "Temperature": 37.9,
+                  "SP": 1,
+                  "DP": 2,
+                  "file": "DiabeticReport.pdf"
+               },
+               {
+                  "p_FirstName": "PatientEight",
+                  "p_Lastname": "PatientEightLastName",
+                  "p_ContactNumber": "6863992449",
+                  "p_Email": "eighthPatientOnline@yahoo.com",
+                  "p_Allergy": "SOY",
+                  "p_FoodPreferences": "Vegan",
+                  "p_CuisineCatergory": "Kerala",
+                  "p_DateOfBirth": "1985-06-28",
+                  "Endpoint": "patient/newReports/{{InvalidPatient_Id}}",
+                  "statusCode": 404,
+                  "Weight": 60.5,
+                  "Height": 166.5,
+                  "Temperature": 37.9,
+                  "SP": 1,
+                  "DP": 2,
+                  "file": "DiabeticReport.pdf"
+               },
+               {
+                  "p_FirstName": "PatientEight",
+                  "p_Lastname": "PatientEightLastName",
+                  "p_ContactNumber": "6863992449",
+                  "p_Email": "eighthPatientOnline@yahoo.com",
+                  "p_Allergy": "SOY",
+                  "p_FoodPreferences": "Vegan",
+                  "p_CuisineCatergory": "Kerala",
+                  "p_DateOfBirth": "1985-06-28",
+                  "Endpoint": "patient/newReports/{{patientId}}",
+                  "statusCode": 200,
+                  "file": "DiabeticReport.pdf"
+               },
+               {
+                  "p_FirstName": "PatientEight",
+                  "p_Lastname": "PatientEightLastName",
+                  "p_ContactNumber": "6863992449",
+                  "p_Email": "eighthPatientOnline@yahoo.com",
+                  "p_Allergy": "SOY",
+                  "p_FoodPreferences": "Vegan",
+                  "p_CuisineCatergory": "Kerala",
+                  "p_DateOfBirth": "1985-06-28",
+                  "Endpoint": "patient/newReports/{{patientId}}",
+                  "statusCode": 200,
+                  "Weight": 60.5,
+                  "Height": 166.5,
+                  "Temperature": 37.9,
+                  "SP": 1,
+                  "DP": 2,
+                  "file": "DiabeticReport.pdf"
+               }
+            ]
+         },
+         {
+            "name": "Get Report By File Id Data Driven",
+            "data": [
+               {
+                  "Endpoint": "patient/testReports/viewFile/{{InvalidPatient_FileId}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "patient/testReportsviewFile/{{fileId}}",
+                  "statusCode": 404
+               },
+               {
+                  "Endpoint": "patient/testReports/viewFile/{{fileId}}",
+                  "statusCode": 200
+               }
+            ]
+         }
+      ]
+   }
+]
